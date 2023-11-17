@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: use/cache-manage.html 
+keywords: volume caching, bluexp volume caching 
+summary: O armazenamento em cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP  para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com muita frequência. Os volumes de cache são ideais para cargas de trabalho com uso intenso de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Gerenciar um cache
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar um cache, alterar a política de exportação, redimensionar um cache e excluir um cache.
+
+Com o armazenamento em cache de volume do BlueXP , você pode atingir estas metas:
+
+* Ver detalhes da cache.
+* Atribua uma política de exportação diferente a um cache.
+* Editar um cache de volume e alterar seu tamanho, etc. Editar terá a opção de exibir e alterar outras propriedades, e mais propriedades serão adicionadas em edição em versões futuras.
+* Redimensione um cache existente com base em uma porcentagem do tamanho do volume original.
+* Eliminar uma cache.
+
+
+
+
+== Ver detalhes da cache
+
+Para cada cache, você pode ver o volume original, o ambiente de trabalho, o volume do cache e muito mais.
+
+.Passos
+. A partir da navegação à esquerda do BlueXP , selecione *Mobilidade* > *Cache de volume*.
++
+Você pode exibir a lista de volumes de cache criados no ambiente de destino. A lista de caches exibe os detalhes do cache.
+
+. Para filtrar a lista, selecione a opção *Filtrar por*.
+. Selecione uma linha e selecione a opção *ações...* à direita.
+. Selecione *Ver e editar detalhes*.
+. Reveja os detalhes.
+
+
+
+
+== Edite um cache
+
+Você pode alterar o nome, o tamanho do volume e a política de exportação de um cache.
+
+.Passos
+. A partir da navegação à esquerda do BlueXP , selecione *Mobilidade* > *Cache de volume*.
+. Selecione uma linha e selecione a opção *ações...* à direita.
+. Selecione *Ver e editar detalhes*.
+. Na guia Configuração básica, opcionalmente, altere o nome do cache e o tamanho do volume do cache.
+. Opcionalmente, expanda a guia Acesso ao cache e modifique esses valores:
++
+.. O caminho de montagem.
+.. Uma política de exportação diferente da existente.
+
+
+. Para alterar os detalhes do compartilhamento SMB/CIFS ou as regras de política de exportação, clique na opção para acessar o Gerenciador de sistema do BlueXP .
+. Selecione *Guardar*.
+
+
+
+
+== Atribua uma política de exportação de cache diferente
+
+Você pode atribuir uma política de exportação diferente a um cache.
+
+As regras da política de exportação de origem devem ser aplicadas ao cluster de destino.
+
+
+TIP: Você pode atribuir uma política de exportação existente a um cache. Não é possível alterar as regras da política de exportação. Se você precisar alterar as políticas de exportação, use o Gerenciador do sistema do NetApp.
+
+.Passos
+. A partir da navegação à esquerda do BlueXP , selecione *Mobilidade* > *Cache de volume*.
+. Selecione uma linha e selecione a opção *ações...* à direita.
+. Selecione *alterar política de exportação*.
+. Selecione a política de exportação que deseja atribuir ao cache.
+. Selecione *Guardar*.
+
+
+
+
+== Redimensione um cache
+
+Você pode alterar o tamanho do volume do cache com base em uma porcentagem do volume de origem.
+
+.Passos
+. A partir da navegação à esquerda do BlueXP , selecione *Mobilidade* > *Cache de volume*.
+. Selecione uma linha e selecione a opção *ações...* à direita.
+. Selecione *Redimensionar*.
+. Introduza uma nova percentagem do tamanho do volume de origem.
++
+O volume do cache será redimensionado para a nova porcentagem.
+
+. Selecione *Guardar*.
+
+
+
+
+== Eliminar uma cache
+
+Se você não precisar mais do cache, você pode excluí-lo. Isso exclui a relação de armazenamento em cache de volume e exclui o cache de volume de destino.
+
+.Passos
+. A partir da navegação à esquerda do BlueXP , selecione *Mobilidade* > *Cache de volume*.
+. Selecione uma linha e selecione a opção *ações...* à direita.
+. Selecione *Eliminar*.
+. Marque a caixa .
+. Selecione *Eliminar*.
+

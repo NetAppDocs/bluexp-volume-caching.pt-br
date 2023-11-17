@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/cache-limitations.html 
+keywords: volume caching, bluexp 
+summary: As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do serviço ou que não interoperam corretamente com ele. 
+---
+= Limitações conhecidas
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do serviço ou que não interoperam corretamente com ele.
+
+
+
+== Limitação na cópia de regras de política de exportação de cache
+
+As regras da política de exportação de cache não são copiadas para o volume de cache nas seguintes situações:
+
+* Quando o ambiente de trabalho do volume de origem é o Amazon FSX for NetApp ONTAP ou Cloud Volumes ONTAP, e o volume de cache é ONTAP 9.10,1 ou anterior.
+* Quando o ambiente de trabalho do volume de origem é qualquer versão do ONTAP, e o volume do cache é ONTAP 9.10,1 ou anterior.
+
+
+Solução alternativa: Você deve criar manualmente as regras para o volume de cache.
+
+
+
+== A criação de cache falha para VMs de armazenamento com o mesmo nome
+
+Se os clusters de origem e destino usarem VMs de storage com o mesmo nome, o cache não será criado.
+
+Solução alternativa: Use nomes diferentes para as VMs de armazenamento de origem e destino.
+
+
+
+== Atraso na exibição de políticas de exportação novas ou editadas recentemente
+
+Ao criar um cache, talvez você não consiga ver uma política de exportação criada ou editada recentemente na lista.
+
+Solução alternativa: Tente novamente em alguns minutos.
+
+
+
+== A criação de cache falha quando o destino tem apenas o protocolo CIFS ativado
+
+A criação de cache falhará se o cluster de origem ou destino tiver ONTAP 9.10,1 ou anterior e o cluster de destino tiver apenas o protocolo CIFS ativado.
+
+Solução alternativa: Use um cluster de destino executando o ONTAP 9.11,1 ou posterior ou com os protocolos CIFS e NFS configurados.

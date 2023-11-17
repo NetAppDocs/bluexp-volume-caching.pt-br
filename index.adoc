@@ -1,0 +1,15 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: index.html 
+summary: O armazenamento em cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP  para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com muita frequência. Os volumes de cache são ideais para cargas de trabalho com uso intenso de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Armazenamento em cache de volume BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

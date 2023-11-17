@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: use/cache-create.html 
+keywords: volume caching, bluexp volume caching 
+summary: O armazenamento em cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP  para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com muita frequência. Os volumes de cache são ideais para cargas de trabalho com uso intenso de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Crie um cache
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode criar um armazenamento em cache de volume entre o Amazon FSX for ONTAP, Cloud Volumes ONTAP e ONTAP on-premises com um ou mais volumes de origem do ambiente de trabalho de origem como fonte de cache. Em seguida, você escolhe a máquina virtual de armazenamento para os volumes de cache.
+
+O volume de cache pode estar no mesmo cluster ou em um cluster diferente do volume de origem. Os volumes selecionados para armazenar em cache devem pertencer à mesma VM de storage e as VMs de storage devem usar os mesmos protocolos.
+
+
+TIP: Se os volumes não forem elegíveis para o armazenamento em cache, eles ficarão esmaecidos para que você não possa selecioná-los.
+
+Você pode inserir o tamanho dos volumes de cache como uma porcentagem do tamanho do volume de origem.
+
+
+NOTE: O IPSpace usado pelo volume do cache depende do IPSpace usado pela VM de armazenamento de origem.
+
+O nome do volume do cache usa um sufixo de `pass:macros[_cache]` adicionado ao nome do volume original.
+
+
+
+== Etapas da página inicial de armazenamento em cache do volume do BlueXP 
+
+. Inicie sessão no BlueXP  e selecione *Mobilidade* > *Cache de volume* na navegação à esquerda.
++
+Você chegará à página do Painel de armazenamento em cache do volume do BlueXP . Quando você começa com o serviço pela primeira vez, você precisa adicionar as informações de cache. Mais tarde, o Dashboard aparece e exibe dados sobre os caches.
+
++
+
+NOTE: Se você ainda não configurou um conetor BlueXP , a opção *Adicionar um conetor* será exibida em vez de *Adicionar um cache*. Neste caso, você precisa configurar o conetor primeiro. Consulte a https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["Início rápido do BlueXP"^] .
+
++
+image:landing-page.png["a página inicial para o armazenamento em cache de volume"]
+
+. Selecione *Adicionar um cache*.
+. Na página dados de cache, selecione a fonte do ambiente de trabalho e o cache de destino e selecione *Start caching wizard*.
+. Na página Configurar caches, selecione o volume ou volumes que deseja armazenar em cache.
++
+
+NOTE: Pode selecionar até 50 volumes.
+
+. Role a página para baixo para fazer alterações adicionais aos detalhes da VM ou ao tamanho do volume.
+. Insira o tamanho dos volumes de cache como uma porcentagem do tamanho do volume de origem.
++
+
+TIP: Uma boa regra é que o tamanho do volume do cache deve ser de cerca de 15% do tamanho do volume de origem.
+
+. Marque a caixa *Cache Access* para replicar as regras de política de exportação NFS e a configuração de compartilhamento SMB/CIFS do volume de origem para o volume de cache de destino.
++
+Em seguida, as regras de política de exportação NFS e o compartilhamento SMB/CIFS no volume de origem serão replicados para o volume de cache. Se o protocolo SMB/CIFS não estiver ativado na VM de armazenamento em cache, o compartilhamento SMB/CIFS não será replicado.
+
+. Opcionalmente, insira o prefixo do nome do cache.
++
+O sufixo de `pass:macros[_cache]` é anexado ao nome no formato: `<user-specified prefix>_<source volume name>_cache`
+
+. Selecione *criar caches*.
++
+O novo cache aparece na lista de Cache. O nome do volume do cache será exibido `pass:macros[_cache]` como um sufixo para o nome do volume de origem.
+
+. Para ver o andamento da operação, no menu superior, selecione image:settings-icon.png["ícone de definições"] > *Timeline*.
+
+
+
+
+== Passos da tela BlueXP 
+
+. Na tela BlueXP , selecione o ambiente de trabalho.
+. Selecione o ambiente de origem e arraste-o para o destino. image:drag-n-drop.png["arraste e solte a funcionalidade para criar cache"]
+. Selecione o serviço *volume caching*.
++
+Isso cria um volume de cache da origem para o destino.
+
+. No painel direito, na caixa Serviço de Cache, selecione *Adicionar*.
+. Na página dados de cache, selecione o ambiente de trabalho que deseja armazenar em cache e selecione *Start cache wizard*. image:cache-data.png["pop-up de dados de cache"]
+. Na página Configurar caches, selecione o volume ou volumes que deseja armazenar em cache.
++
+
+NOTE: Pode selecionar até 50 volumes.
+
+. Role a página para baixo para fazer alterações adicionais aos detalhes da VM ou ao tamanho do volume.
+. Insira o tamanho dos volumes de cache como uma porcentagem do tamanho do volume de origem.
++
+
+TIP: Uma boa regra é que o tamanho do volume do cache deve ser de cerca de 15% do tamanho do volume de origem.
+
++
+image:create-cache.png["janela para adicionar cache"]
+
+. Marque a caixa *Cache Access* para replicar as regras de política de exportação NFS e a configuração de compartilhamento SMB/CIFS do volume de origem para o volume de cache de destino.
++
+Em seguida, as regras de política de exportação NFS e o compartilhamento SMB/CIFS no volume de origem serão replicados para o volume de cache. Se o protocolo SMB/CIFS não estiver ativado na VM de armazenamento em cache, o compartilhamento SMB/CIFS não será replicado.
+
+. Opcionalmente, insira o prefixo do nome do cache.
++
+O sufixo de `pass:macros[_cache]` é anexado ao nome no formato: `<user-specified prefix>_<source volume name>_cache`
+
+. Selecione *criar caches*.
++
+O novo cache aparece na lista de Cache. O nome do volume do cache será exibido `pass:macros[_cache]` como um sufixo para o nome do volume de origem.
+
+. Para ver o andamento da operação, no menu superior, selecione image:settings-icon.png["ícone de definições"] > *Timeline*.
+

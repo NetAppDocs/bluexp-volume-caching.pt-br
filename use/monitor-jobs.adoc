@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: use/monitor-jobs.html 
+keywords: volume caching, bluexp volume caching 
+summary: O armazenamento em cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP  para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com muita frequência. Os volumes de cache são ideais para cargas de trabalho com uso intenso de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Monitorar trabalhos de armazenamento em cache de volume na linha de tempo
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode monitorar todos os trabalhos de armazenamento em cache de volume e determinar seu progresso.
+
+.Passos
+. No menu superior, selecione image:settings-icon.png["Ícone de definições na IU"] > *Timeline*.
++
+image:timeline.png["ecrã da linha do tempo"]
+
+. Opcionalmente, filtre por tempo, serviço, ação, agente, recurso, usuário ou status.
+. Explore todos os caches e as operações.
+

@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-faq.html 
+keywords: volume caching faq, caching frequently asked questions 
+summary: Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta. 
+---
+= Perguntas frequentes sobre o armazenamento em cache de volume do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Este FAQ pode ajudar se você está apenas procurando uma resposta rápida para uma pergunta.
+
+*Qual é a URL de cache de volume do BlueXP ?* Para o URL, em um navegador, digite: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Para acessar o console do BlueXP .
+
+* Você precisa de uma licença para usar o cache de volume do BlueXP ?* Não é necessário um ficheiro de licença NetApp (NLF).
+
+*Como você ativa o armazenamento em cache de volume do BlueXP ?* O armazenamento em cache de volume BlueXP  não exige capacitação. A opção de cache de volume aparece automaticamente na navegação esquerda do BlueXP .

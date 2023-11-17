@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-quick-start.html 
+keywords: how to get started with bluexp volume caching, volume caching quick start 
+summary: Comece a usar o serviço de armazenamento em cache de volume do NetApp BlueXP  em algumas etapas. 
+---
+= Início rápido para o armazenamento em cache de volume BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aqui está uma visão geral das etapas necessárias para começar a usar o cache de volume do BlueXP . Os links em cada etapa levam você a uma página que fornece mais detalhes.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Reveja os pré-requisitos
+[role="quick-margin-para"]
+link:../get-started/cache-prerequisites.html["Certifique-se de que seu ambiente atenda a esses requisitos"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Configure o serviço de armazenamento em cache de volume
+[role="quick-margin-para"]
+link:../get-started/cache-setup.html["Configurar o armazenamento em cache de volume do BlueXP "].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] O que se segue?
+[role="quick-margin-para"]
+Depois de configurar o serviço, aqui está o que você pode fazer a seguir.
+
+[role="quick-margin-list"]
+* link:../use/cache-create.html["Crie um cache"].
+* link:../use/cache-use-overview.html["Gerencie um cache, edite um cache, redimensione um cache ou exclua um cache"].
+* link:../use/monitor-jobs.html["Monitorar operações de armazenamento em cache de volume"].
+

@@ -1,0 +1,39 @@
+---
+indexpage:
+  lead: O armazenamento em cache de volume fornece um volume persistente e gravável
+    em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP 
+    para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com
+    muita frequência. Os volumes de cache são ideais para cargas de trabalho com uso
+    intenso de leitura, especialmente quando os clientes precisam acessar os mesmos
+    dados repetidamente.
+  tiles:
+  - title: Comece agora
+    links:
+    - title: Saiba mais sobre o armazenamento em cache de volume do BlueXP 
+      url: "/get-started/cache-intro.html"
+    - title: Novidades no armazenamento em cache de volume do BlueXP 
+      url: "/release-notes/cache-whats-new.html"
+    - title: Início rápido
+      url: "/get-started/cache-quick-start.html"
+    - title: Pré-requisitos
+      url: "/get-started/cache-prerequisites.html"
+    - title: Faça login no armazenamento em cache de volume do BlueXP 
+      url: "/get-started/cache-login.html"
+    - title: FAQ
+      url: "/get-started/cache-faq.html"
+  - title: Use o armazenamento em cache de volume BlueXP 
+    links:
+    - title: Use a visão geral do armazenamento em cache de volume do BlueXP 
+      url: "/use/cache-use-overview.html"
+    - title: Crie um cache
+      url: "/use/cache-create.html"
+    - title: Gerenciar um cache
+      url: "/use/cache-manage.html"
+    - title: Monitorar trabalhos de armazenamento em cache de volume
+      url: "/use/monitor-jobs.html"
+  - title: Blogs & comunidade
+    links:
+    - title: Comunidade NetApp
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: Webinars na nuvem
+      url: https://bluexp.netapp.com/events

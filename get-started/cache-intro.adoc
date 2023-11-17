@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-intro.html 
+keywords: how bluexp volume caching works, what is volume caching, bluexp 
+summary: O armazenamento em cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP  para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com muita frequência. Os volumes de cache são ideais para cargas de trabalho com uso intenso de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Saiba mais sobre o armazenamento em cache de volume do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O armazenamento em cache de volume, um recurso do software ONTAP 9, é um recurso de armazenamento em cache remoto que simplifica a distribuição de arquivos, reduz a latência da WAN ao aproximar os recursos de seus usuários e recursos de computação e reduz os custos de largura de banda da WAN. O armazenamento em cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP  para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com muita frequência. Os volumes de cache são ideais para cargas de trabalho com uso intenso de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente.
+
+Com o armazenamento em cache de volume do BlueXP , você tem funcionalidades de armazenamento em cache para a nuvem, especificamente para o Amazon FSX for NetApp ONTAP, Cloud Volumes ONTAP e ambientes locais como trabalho.
+
+O serviço também fornece acesso a conjuntos de dados corporativos nas filiais. Ao fornecer _hot data_, dados que precisam ser acessados com frequência de vários controladores em um cluster, você pode aumentar o desempenho entregue aos principais aplicativos. E, ao armazenar em cache dados ativos locais para usuários em vários locais do mundo, é possível aprimorar a colaboração ao permitir o acesso simultâneo a conjuntos de dados centralizados, além de reduzir o tempo de resposta que recebem ao acessar os dados ativos.
+
+
+
+== O que é um cache?
+
+Um cache é um local de armazenamento temporário que reside entre um host e a origem dos dados. O objetivo de um cache é armazenar porções de dados de origem acessadas com frequência de uma forma que permita que os dados sejam servidos mais rápido do que seria, obtendo os dados da fonte. Os caches são mais benéficos em ambientes de leitura intensiva, onde os dados são acessados mais de uma vez e são compartilhados por vários hosts. Um sistema de cache é mais rápido do que o sistema com fonte de dados, o que é obtido por meio de um sistema de armazenamento mais rápido e proximidade do espaço de armazenamento em cache com o host.
+
+
+
+== Benefícios de usar o armazenamento em cache de volume do BlueXP 
+
+O armazenamento em cache de volume do BlueXP  oferece os seguintes benefícios:
+
+* Acelere o desempenho em uma infraestrutura de nuvem híbrida
+* Remova os silos de nuvem armazenando dados em cache de um fornecedor de nuvem para outro
+* Custos de storage menores
+* Colabore entre locais geográficos
+* Uso de um serviço gerenciado pelo NetApp no BlueXP 
+* Capacidade de adaptação a ambientes DE TI em constante mudança mais rapidamente
+* Armazenamento em cache de volume sob demanda ou baseado em assinatura hospedado na nuvem
+
+
+
+
+== O que você pode fazer com o armazenamento em cache de volume do BlueXP 
+
+O armazenamento em cache de volume do BlueXP  fornece o uso completo de várias tecnologias NetApp para alcançar as seguintes metas:
+
+O serviço de armazenamento em cache por volume da BlueXP  fornece o uso completo de várias tecnologias NetApp para alcançar as seguintes metas:
+
+* Armazene dados em cache de um provedor de nuvem para outro
+* Exibir e editar uma política de exportação de cache
+* Redimensione um cache existente
+* Eliminar uma cache
+
+
+
+
+== Custo
+
+A NetApp não cobra pelo uso do serviço de armazenamento em cache por volume da BlueXP , mas você precisará verificar seu provedor de nuvem para verificar se há taxas de entrada e saída de dados aplicáveis.
+
+
+
+== Licenciamento
+
+Não são necessárias licenças ONTAP especiais para o armazenamento em cache de volume do BlueXP .
+
+
+
+== Como funciona o armazenamento em cache de volume do BlueXP 
+
+Um volume de cache é um volume pouco preenchido que é suportado por um volume de origem. O volume de cache pode estar no mesmo cluster ou em um cluster diferente do volume de origem.
+
+O volume de cache fornece acesso aos dados no volume de origem sem exigir que todos os dados estejam no volume de cache. O storage de dados no volume de armazenamento em cache é gerenciado de forma eficiente com a retenção apenas dos dados ativos (dados em funcionamento ou usados recentemente).
+
+O cache de volume do BlueXP  lê as solicitações se o volume de cache contiver os dados solicitados pelo cliente. Caso contrário, o serviço de armazenamento em cache de volume solicita os dados do volume de origem e armazena os dados antes de servir a solicitação do cliente. As solicitações subsequentes para os dados são então servidas diretamente do volume do cache. Isso melhora o desempenho quando os mesmos dados são acessados repetidamente, porque após a primeira solicitação, os dados não precisam mais viajar pela rede ou ser atendidos de um sistema sobrecarregado.
