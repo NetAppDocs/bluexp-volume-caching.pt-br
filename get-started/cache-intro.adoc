@@ -34,9 +34,9 @@ O armazenamento em cache de volume do BlueXP  oferece os seguintes benefícios:
 * Remova os silos de nuvem armazenando dados em cache de um fornecedor de nuvem para outro
 * Custos de storage menores
 * Colabore entre locais geográficos
-* Uso de um serviço gerenciado pelo NetApp no BlueXP 
-* Capacidade de adaptação a ambientes DE TI em constante mudança mais rapidamente
-* Armazenamento em cache de volume sob demanda ou baseado em assinatura hospedado na nuvem
+* Use um serviço gerenciado pelo NetApp no BlueXP 
+* Adapte-se mais rapidamente a ambientes DE TI em constante mudança
+* Use armazenamento em cache de volume sob demanda ou baseado em assinatura hospedado na nuvem
 
 
 
@@ -45,12 +45,10 @@ O armazenamento em cache de volume do BlueXP  oferece os seguintes benefícios:
 
 O armazenamento em cache de volume do BlueXP  fornece o uso completo de várias tecnologias NetApp para alcançar as seguintes metas:
 
-O serviço de armazenamento em cache por volume da BlueXP  fornece o uso completo de várias tecnologias NetApp para alcançar as seguintes metas:
-
-* Armazene dados em cache de um provedor de nuvem para outro
-* Exibir e editar uma política de exportação de cache
-* Redimensione um cache existente
-* Eliminar uma cache
+* Armazene dados em cache de um provedor de nuvem para outro.
+* Exibir e editar uma política de exportação de cache.
+* Redimensione um cache existente.
+* Eliminar uma cache.
 
 
 

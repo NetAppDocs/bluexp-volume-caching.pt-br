@@ -12,13 +12,13 @@ summary: O armazenamento em cache de volume fornece um volume persistente e grav
 
 
 [role="lead"]
-Você pode editar um cache, alterar a política de exportação, redimensionar um cache e excluir um cache.
+Você pode editar um cache de volume, alterar a política de exportação, redimensionar um cache e excluir um cache.
 
 Com o armazenamento em cache de volume do BlueXP , você pode atingir estas metas:
 
 * Ver detalhes da cache.
 * Atribua uma política de exportação diferente a um cache.
-* Editar um cache de volume e alterar seu tamanho, etc. Editar terá a opção de exibir e alterar outras propriedades, e mais propriedades serão adicionadas em edição em versões futuras.
+* Edite um cache de volume e altere atributos, como seu tamanho.
 * Redimensione um cache existente com base em uma porcentagem do tamanho do volume original.
 * Eliminar uma cache.
 
@@ -57,7 +57,7 @@ Você pode alterar o nome, o tamanho do volume e a política de exportação de 
 .. Uma política de exportação diferente da existente.
 
 
-. Para alterar os detalhes do compartilhamento SMB/CIFS ou as regras de política de exportação, clique na opção para acessar o Gerenciador de sistema do BlueXP .
+. Para alterar os detalhes do compartilhamento SMB/CIFS ou as regras de política de exportação, clique na opção para acessar o Gerenciador de sistema do ONTAP.
 . Selecione *Guardar*.
 
 
@@ -70,7 +70,7 @@ Você pode atribuir uma política de exportação diferente a um cache.
 As regras da política de exportação de origem devem ser aplicadas ao cluster de destino.
 
 
-TIP: Você pode atribuir uma política de exportação existente a um cache. Não é possível alterar as regras da política de exportação. Se você precisar alterar as políticas de exportação, use o Gerenciador do sistema do NetApp.
+TIP: Você pode atribuir uma política de exportação existente a um cache. Não é possível alterar as regras da política de exportação. Se você precisar alterar as políticas de exportação, use o Gerenciador do sistema do ONTAP.
 
 .Passos
 . A partir da navegação à esquerda do BlueXP , selecione *Mobilidade* > *Cache de volume*.
@@ -92,7 +92,7 @@ Você pode alterar o tamanho do volume do cache com base em uma porcentagem do v
 . Selecione *Redimensionar*.
 . Introduza uma nova percentagem do tamanho do volume de origem.
 +
-O volume do cache será redimensionado para a nova porcentagem.
+O volume de cache redimensiona para a nova porcentagem.
 
 . Selecione *Guardar*.
 

@@ -12,7 +12,7 @@ summary: O armazenamento em cache de volume fornece um volume persistente e grav
 
 
 [role="lead"]
-Você pode criar um armazenamento em cache de volume entre o Amazon FSX for ONTAP, Cloud Volumes ONTAP e ONTAP on-premises com um ou mais volumes de origem do ambiente de trabalho de origem como fonte de cache. Em seguida, você escolhe a máquina virtual de armazenamento para os volumes de cache.
+Você pode criar um cache de volume entre o Amazon FSX for ONTAP, Cloud Volumes ONTAP e ONTAP on-premises com um ou mais volumes de origem do ambiente de trabalho de origem como fonte de cache. Em seguida, você escolhe a máquina virtual de armazenamento para os volumes de cache.
 
 O volume de cache pode estar no mesmo cluster ou em um cluster diferente do volume de origem. Os volumes selecionados para armazenar em cache devem pertencer à mesma VM de storage e as VMs de storage devem usar os mesmos protocolos.
 
